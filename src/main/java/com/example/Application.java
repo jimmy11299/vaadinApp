@@ -22,7 +22,7 @@ public class Application implements AppShellConfigurator {
     CommandLineRunner openBrowser() {
         return args -> {
             try {
-                String url = "http://localhost:8090";
+                String url = "http://localhost:8080";
                 // 強制使用 Windows 的命令列開啟 Chrome (或預設瀏覽器)
                 Runtime.getRuntime().exec("cmd /c start " + url);
             } catch (Exception e) {

@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
     
     <properties>
-        <java.version>25</java.version>
+        <java.version>21</java.version>
         <vaadin.version>25.3.0</vaadin.version>
     </properties>
     
@@ -32,6 +32,12 @@
     </dependencyManagement>
     
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.vaadin</groupId>
             <!-- Replace artifactId with vaadin-core to use only free components -->
@@ -55,6 +61,17 @@
             <groupId>com.vaadin</groupId>
             <artifactId>browserless-test-spring</artifactId>
             <scope>test</scope>
+        </dependency>
+        <!-- Spring Data JPA（負責跟資料庫溝通） -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <!-- PostgreSQL JDBC Driver -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
         </dependency>
     </dependencies>
     

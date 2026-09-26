@@ -6,7 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import com.vaadin.flow.component.page.AppShellConfigurator;
-
+/**
+ * 主程式入口
+ * Application
+ */
 @SpringBootApplication
 public class Application implements AppShellConfigurator {
 
